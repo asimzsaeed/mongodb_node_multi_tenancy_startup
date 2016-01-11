@@ -1,4 +1,7 @@
 # MongoDB, NodeJS Multi-tenancy startup template
-Details to follow
+
+-TODO: 
+- Readme 
+- Implement UX/UI - Client signup, login.
 
 
