@@ -15,6 +15,7 @@ It's super easy, to setup multi-tenancy application.
 - Components and Module based Architecture
 - REST API
 - A lot more... & comming
+
 ----
 
 **Steps to follow**
@@ -22,7 +23,7 @@ It's super easy, to setup multi-tenancy application.
 npm & bower install
 ```
 
-**Configure your domain in host file and point to **
+**Configure your domain in host file and point to**
 `127.0.0.1:80`
 
 **Update domain name, database prefix in config.json**
@@ -32,6 +33,8 @@ npm & bower install
 
 ![image](https://cloud.githubusercontent.com/assets/12631282/12248992/ee5c745a-b8b4-11e5-8fe9-30bbf5ee227c.png)
 
+
+**Gulp build**
 
 
 ### Default landing page
