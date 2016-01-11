@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="vizob.crm">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale = 1.0">
+        <meta name="fragment" content="!" />
+
+        <title ng-bind="'Vizob - CRM - ' + pageTitle"></title>
+        <meta name="description" content="{{pageDescription}}">
+
+        <link href="/vendor.css" rel="stylesheet">
+        <link href="/app.css" rel="stylesheet">
+    </head>
+
+    <body class="flex" ng-class="bodyClasses" ng-controller="MainCtrl">
+        <vizob-sidebar></vizob-sidebar>
+        <div class="content-wrapper flex">
+        <vizob-navbar></vizob-navbar>
+            <div class="content">
+               <div ui-view autoscroll="false" id="ui-view"></div>
+            </div>
+        </div>
+        <script src="/vendor.js"></script>
+        <script src="/bundle.js"></script>
+    </body>
+</html>
+
+ 
+    
+ 

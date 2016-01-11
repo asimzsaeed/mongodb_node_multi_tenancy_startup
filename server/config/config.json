@@ -1,0 +1,43 @@
+{
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "domain": {
+      "vizob":"[PLEASE UPDATE YOUR DOMAIN NAME HERE]",
+      "SYSTEM_DOMAINS" : ["www", "http", "https", "tcp", "admin", "app", "apps"],
+      "BLACK_LIST_DOMAINS" : []
+    },
+
+  "urls": {
+    "clientLogin": "[PLEASE UPDATE YOUR URL NAME HERE, e.g www.mydoman.com\\login]"
+  },
+  "dbs": {
+    "client_base": "mongodb://localhost/",
+    "client_db_sufix": "_vizob_com",
+    "vizob_com_crm": "mongodb://localhost/com_v1"
+  },
+  "auth": {
+    "tokenExpiresIn": "7d",
+    "saltWorkFactor" : 10,
+    "secret": "db97a3ed33ed5ea0430dbd02d400ede69e7ff5656d25811dcc720382c2997423"
+  },
+
+  "message": {
+    "invalidCredentials" : "Invalid credentials",
+    "accountLock" : "Account has tempory lock please try again later",
+    "unprocessableRequest": "Unprocessable request"
+  },
+  "logging": {
+    "name" : "Vizob CRM",
+    "type" : "dev",
+    "logDirectory": "logs",
+    "streams" : {
+        "level":"info",
+        "type": "rotating-file",
+        "path": "server.log",
+        "period": "1d",
+        "count": 2
+    }
+  }
+}
+

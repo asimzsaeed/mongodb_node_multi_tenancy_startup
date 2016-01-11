@@ -1,0 +1,29 @@
+ <aside class="sidebar flex" ng-class="{'pinned': SidebarCtrl.pinned}">
+    <div class="app-navbar">
+    	<div class="inner"> 
+    		<span class="brand">VizOB</span>
+			<span class="pull-right" ng-click="SidebarCtrl.pinned = !SidebarCtrl.pinned"> 
+				<i class="fa fa-angle-double-left" ng-if="SidebarCtrl.pinned"></i> 
+				<i class="fa fa-angle-double-right" ng-if="!SidebarCtrl.pinned"></i>
+			</span>
+		</div>
+	</div>
+    <div class="content">
+        <div class="sidebar-menu">
+        	<ul class="menu-items">
+				<li ui-sref-active="active">
+					<a ui-sref='home'   title="Dashboard">
+						<span class="icon"><i class="fa  fa-align-justify"></i></span>
+						<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li ui-sref-active="active">
+					<a ui-sref='customer' title="Customers">
+						<span class="icon"><i class="fa  fa-align-justify"></i></span>
+						<span class="title">Customers</span> 
+					</a>
+				</li>
+			</ul>
+        <div>
+    </div>
+</aside>

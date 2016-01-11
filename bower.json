@@ -1,0 +1,32 @@
+{
+   "name": "vizob_mongod_node_multi_tenancy_startup",
+  "version": "0.0.1",
+  "description": "mongod node multi tenancy startup",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asimzsaeed/mongod_node_multi_tenancy_startup"
+  },
+  "authors": "Muhammad Asim  <asimz.saeed@gmail.com>",
+  "private": false,
+  "devDependencies": {
+    "angular-mocks": "~1.4.2"
+  },
+  "dependencies": {
+    "angular": "~1.4.2",
+    "angular-bootstrap": "~0.12.1",
+    "angular-ui-utils": "~0.2.3",
+    "angular-ui-router": "~0.2.13",
+    "angular-animate": "~1.4.2",
+    "angular-cookies": "~1.4.2",
+    "angular-resource": "~1.4.2",
+    "angular-sanitize": "~1.4.2",
+    "animate.css": "~3.2.5",
+    "bootstrap": "~3.3.5",
+    "domready": "~1.0.7",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1",
+    "restangular": "~1.5.1"
+  }
+}

@@ -1,0 +1,173 @@
+ 
+@import (reference) "./styles/mixins.less";
+@import (reference) "./styles/variables.less";
+@import (reference) "../../libs/bootstrap/less/bootstrap.less";
+ 
+ 
+html{
+    margin:0; 
+    width:100%;
+    height:100%;
+}
+
+
+body{    
+    margin:0; 
+    width:100%;
+    height:100%;
+    color:@default-color;
+    background-color:@default-gb-color;
+    &.flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: stretch;
+    }
+    > a{
+        color:@default-color
+    }
+}
+ 
+.app-navbar{
+    display: block;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px 0 0;
+    z-index: 800;
+    background-color: #fff;
+    border-bottom: 1px solid @default-border-color;
+    .inner{
+        vertical-align: middle; 
+        height: 60px;
+        padding: 15px 20px;
+        .vizob-logo{
+            height: 30px;
+        }
+    }
+}
+
+.sidebar {
+    order: 0;
+    width: @sidebar-width;
+    align-self: stretch;
+    background-color:@sidebar-bg;
+    transition: transform 900ms cubic-bezier(0.05,0.74,0.27,0.99);
+    &.pinned {
+        width:@sidebar-width-pinned;
+        transition: transform 900ms cubic-bezier(0.05,0.74,0.27,0.99);
+        .brand{
+             display: inline-block!important;
+        }
+
+       .content .sidebar-menu .menu-items > li > a .title {
+           display: inline-block!important;
+            line-height: 12px!important;
+        }
+    }
+    &.flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: stretch;
+        border-right: 1px solid @default-border-color;
+        .app-navbar{
+            background-color:@sidebar-navbar-bg;
+            border-bottom: 1px solid @sidebar-border;
+            .inner{
+                color:@white;
+               display: block;
+               .brand{
+                    font-size: 28px;
+                    font-weight: 700;
+                    opacity: 0.7;
+                     display: none;
+               }
+                i{
+                    cursor: pointer; 
+                    opacity: 0.7;
+                    &:hover{  opacity: 1; }
+                }
+            }
+        }
+        .content{
+            align-self: stretch;
+            flex: 1 1 auto;
+            .sidebar-menu {
+                position: relative;
+                width: 100%;
+                .menu-items {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    height: calc(100% - 10px);
+                    width: 100%;
+                    >li.active{background-color: #474f61;}
+                    >li {
+                        display: block;
+                        padding: 2px 20px;
+                        clear: right;
+                        >  a{
+                            font-family: Arial,sans-serif;
+                            display: inline-block;
+                            padding: 0 3px;
+                            min-height: 40px;
+                            line-height: 40px;
+                            font-size: 14px;
+                            clear: both;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 85%;
+                            color:@white;
+                            opacity: 0.7;
+                            text-decoration: none;
+                            &:focus,&:hover,&.active{
+                                opacity: 1;
+                            }
+                            .icon{
+                                width: 30px;
+                                display: inline-block;
+                            }
+                            .title {
+                                display:none;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                line-height: 28px;
+                            }
+                        }
+                        &:after, &:before,{
+                            display: table;
+                            content: " ";
+                            clear: both;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+.content-wrapper {
+    order: 1;
+    flex: 7 1 auto;
+    align-self: stretch;
+    background-color:@default-gb-color;
+    &.flex{
+        display: flex;
+        flex-direction: column;
+        
+        .content{
+             background-color:#fff;
+              align-self: stretch;
+             flex: 1 1 auto;
+              padding:20px;
+        }
+     }
+}
