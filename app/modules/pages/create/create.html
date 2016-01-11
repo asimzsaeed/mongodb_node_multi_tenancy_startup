@@ -1,6 +1,13 @@
-<div class="wrapper flex">
- <div class="aside"> 
- 	 <ng:form name="createForm">
+<header class="page">
+  <div class="backstretch"  >
+  	<img src="images/bg-1.jpg"  >
+  </div>
+</header>
+<div   class="vo-features vo-extra-height">
+	<div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           	 <ng:form name="createForm">
  	 	<div ng-switch on="CreateCtrl.current_step">
  	 		<div ng-switch-when="email">
 				<div class="form-group form-group-default">
@@ -14,7 +21,7 @@
 					    <input type="password" class="form-control" ng-model="CreateCtrl.user.password" required >
 				  	</div>
                     <p ng-if="CreateCtrl.current_step_message" ng-bind="CreateCtrl.current_step_message"></p>
-                    <label>It's ok to send me (very occasional) email about the Slack service.</label>
+                    <label>It's ok to send me (very occasional) email about the vizob service.</label>
               	</div>
               	<button class="btn btn-default" ng-click="CreateCtrl.EmailVerify(CreateCtrl.user.username)">Next</button>
  	 		</div>
@@ -23,7 +30,7 @@
 					<h3>Name your CRM </h3>
 					<p>You might want to name your CRM after your division, or working group.</p>
                 	<label>Company <span>(you can change this later)</span></label>
-                    <input type="text" ng-model="CreateCtrl.user.company" placeholder="Company or business ng-model" class="form-control" required />
+                    <input type="text" ng-model="CreateCtrl.user.company" placeholder="Company or business" class="form-control" required />
               	</div>
  				<button class="btn btn-default" ng-click="CreateCtrl.SuggestUrls(CreateCtrl.user.company)">Next</button>
  	 		</div>
@@ -40,7 +47,7 @@
  	 		</div>
  	 		<div ng-switch-when="review">
 				<div class="form-group form-group-default">
-					<h3>Confirm your CRM details</h3>
+					<h3>Confirm your details</h3>
 					<div class="form-group">
 					    <label >Email address</label>
 					    <div class="input-group">  
@@ -72,8 +79,13 @@
  	 	</div>
  	 	
  	 </ng:form>
- </div>
- <div class="content"> 
- 	Picture
- </div>
+        </div>
+        <div class="col-md-6">
+          <img src="images/components-1.png">
+        </div>
+
+      </div>
+
+    </div>
 </div>
+ 

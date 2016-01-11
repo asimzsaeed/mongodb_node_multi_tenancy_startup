@@ -1,21 +1,32 @@
-<div class="wrapper flex">
- <div class="aside"> 
- 	 <ng:form name="createForm">
- 	 	 <div class="form-group form-group-default">
-			<h3>Login to DOMAIN.vizob.com</h3>
-			<div class="form-group">
-			    <label>Login with your e-mail address</label>
-			    <input type="email" ng-model="vm.user.username" placeholder="Email address" class="form-control" required /> 
-		  	</div>
-		  	<div class="form-group">
-			    <label >Password</label>
-			    <input type="password" class="form-control" ng-model="vm.user.password" required >
-		  	</div>
-      	</div>
-      	<button class="btn btn-default" ng-click="vm.Login(vm.user)">Login</button>
- 	 </ng:form>
- </div>
- <div class="content"> 
- 	Picture
- </div>
+ <header class="page">
+  <div class="backstretch"  >
+  <img src="images/bg-1.jpg"  >
+  </div>
+  </header>
+  <div   class="vo-features vo-extra-height">
+	<div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Login to {{CLINET_DOMAIN}}.vizob.com</h2>
+           	<ng:form name="createForm">
+		 	 	 <div class="form-group form-group-default">
+					<div class="form-group">
+					    <label>Login with your e-mail address</label>
+					    <input type="email" ng-model="vm.user.username" placeholder="Email address" class="form-control" required /> 
+				  	</div>
+				  	<div class="form-group">
+					    <label >Password</label>
+					    <input type="password" class="form-control" ng-model="vm.user.password" required >
+				  	</div>
+		      	</div>
+	      		<button class="btn btn-default" ng-click="vm.Login(vm.user)">Login</button>
+	 	 	</ng:form>
+        </div>
+        <div class="col-md-6">
+          <img src="images/components-1.png">
+        </div>
+
+      </div>
+
+    </div>
 </div>
