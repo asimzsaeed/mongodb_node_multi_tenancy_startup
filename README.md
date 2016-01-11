@@ -1,3 +1,19 @@
+# MongoDB, NodeJS Multi-tenancy startup template
+
+Steps to follow
+```javascrip 
+npm & bower install
+```
+
+**Update domain name, database prefix in config.json**
+
+![image](https://cloud.githubusercontent.com/assets/12631282/12248959/b3afa624-b8b4-11e5-8f53-7d22c710eff3.png)
+
+
+![image](https://cloud.githubusercontent.com/assets/12631282/12248992/ee5c745a-b8b4-11e5-8fe9-30bbf5ee227c.png)
+
+
+
 ### Default landing page
 ![title_1](https://cloud.githubusercontent.com/assets/12631282/12248660/ccf26d58-b8b2-11e5-85d5-56753331dc50.png)
 ![title_2](https://cloud.githubusercontent.com/assets/12631282/12248664/cefb02b8-b8b2-11e5-99c2-c599846cf4e4.png)
@@ -17,9 +33,5 @@
 
 
 # MongoDB, NodeJS Multi-tenancy startup template
-
--TODO: 
-- Readme 
-- Implement UX/UI - Client signup, login.
 
 
