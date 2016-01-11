@@ -1,0 +1,79 @@
+<div class="wrapper flex">
+ <div class="aside"> 
+ 	 <ng:form name="createForm">
+ 	 	<div ng-switch on="CreateCtrl.current_step">
+ 	 		<div ng-switch-when="email">
+				<div class="form-group form-group-default">
+					<h3>Create a new CRM</h3>
+					<div class="form-group">
+					    <label>Sign up with your e-mail address</label>
+					    <input type="email" ng-model="CreateCtrl.user.username" placeholder="Email address" class="form-control" required /> 
+				  	</div>
+				  	<div class="form-group">
+					    <label >Password</label>
+					    <input type="password" class="form-control" ng-model="CreateCtrl.user.password" required >
+				  	</div>
+                    <p ng-if="CreateCtrl.current_step_message" ng-bind="CreateCtrl.current_step_message"></p>
+                    <label>It's ok to send me (very occasional) email about the Slack service.</label>
+              	</div>
+              	<button class="btn btn-default" ng-click="CreateCtrl.EmailVerify(CreateCtrl.user.username)">Next</button>
+ 	 		</div>
+ 	 		<div ng-switch-when="company">
+				<div class="form-group form-group-default">
+					<h3>Name your CRM </h3>
+					<p>You might want to name your CRM after your division, or working group.</p>
+                	<label>Company <span>(you can change this later)</span></label>
+                    <input type="text" ng-model="CreateCtrl.user.company" placeholder="Company or business ng-model" class="form-control" required />
+              	</div>
+ 				<button class="btn btn-default" ng-click="CreateCtrl.SuggestUrls(CreateCtrl.user.company)">Next</button>
+ 	 		</div>
+ 	 		<div ng-switch-when="domain">
+				<div class="form-group form-group-default">
+					<h3>Get a URL</h3>
+					<p>This is the address that you and your coworkers will use to sign in to Vizob CRM</p>
+                	<label>Your Vizob URL <span>(Letters, numbers, and dashes only)</span></label>
+                    <input type="text" ng-model="CreateCtrl.user.domain" placeholder="http://{{CreateCtrl.user.domain}}.vizob.com" class="form-control" required>
+                    <p ng-if="CreateCtrl.current_step_message" ng-bind="CreateCtrl.current_step_message"></p>
+					<span class="urls_list" ng-repeat="item in CreateCtrl.urls_checked" ng-class="{'text-danger' : item.status=== 'taken', 'text-primary' : item.status=== 'available'}"> {{item.url}}</span>
+              	</div>
+ 	 			<button class="btn btn-default"  ng-click="CreateCtrl.SuggestUrls(CreateCtrl.user.domain)">Next</button>
+ 	 		</div>
+ 	 		<div ng-switch-when="review">
+				<div class="form-group form-group-default">
+					<h3>Confirm your CRM details</h3>
+					<div class="form-group">
+					    <label >Email address</label>
+					    <div class="input-group">  
+							<input type="email" class="form-control" ng-model="CreateCtrl.user.username" disabled /> 
+							<div class="input-group-addon">edit</div> 
+						</div>
+					  </div>
+					  <div class="form-group">
+					    <label  >Company</label>
+					    <div class="input-group">  
+					    	<input type="text" class="form-control" ng-model="CreateCtrl.user.company"  disabled/> 
+							<div class="input-group-addon">edit</div> 
+						</div>
+
+					  </div>
+					  <div class="form-group">
+					    <label>URL</label>
+					    <div class="input-group">  
+							 <input type="text" class="form-control" ng-model="CreateCtrl.user.domain" disabled /> 
+							<div class="input-group-addon">edit</div> 
+						</div>
+
+					   
+					  </div>
+					  
+              	</div>
+              	<button class="btn btn-default"   ng-click="CreateCtrl.Signup(CreateCtrl.user)">Sign Up</button>
+ 	 		</div>
+ 	 	</div>
+ 	 	
+ 	 </ng:form>
+ </div>
+ <div class="content"> 
+ 	Picture
+ </div>
+</div>

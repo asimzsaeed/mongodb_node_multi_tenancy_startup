@@ -34,6 +34,12 @@ server.use(bodyParser.json()); // for parsing application/json
 //server.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 //server.use(multer()); // for parsing multipart/form-data
 
+//NOTE: At the moment sometime we get followign error:
+//(node) warning: possible EventEmitter memory leak detected. 11 listeners added. Use emitter.setMaxListeners() to increase limit.
+// It's due to we are using alots of listeners e.g. server.all('/*', cors());, server.all('/*', cors(require('./lib/middlewares/validateDomain')));
+// We need to merge somge of those listners into one listner
+// Suggetion : merge all '/api/*' into One, cors into validateDomain 
+
 server.options('*', cors()); 
 server.all('/*', cors());
 
@@ -59,18 +65,6 @@ server.all('/api/*', [require('./lib/middlewares/validateRequest')]);
 //Initilize API's
 var api = require('./lib/api');
 api.initialize(server);
-
-
-server.get('/loader', function(req, res, next) {
-    console.log('/loader');
-    var fallbackPage = '/loader.html';
-    var rootPath = path.join(__dirname, './../dist/');
-    res.sendFile('/', { 
-        root: rootPath,
-        fallback :  rootPath  + fallbackPage //'/index.html'
-      });
-});
-
 
 server.all('/*', function(req, res, next) {
     var fallbackPage = '/loader.html';

@@ -6,6 +6,7 @@ function customerRoutes($stateProvider) {
         name: 'customer',  
         url: '/customer',  
         template: '<div customer-view></div>',
+        access: { requiredLogin: true },
         data: {
             moduleClasses: 'customer',  
             pageClasses: 'customer', 

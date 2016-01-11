@@ -1,0 +1,21 @@
+@import (reference) "../../../common/styles/mixins.less";
+@import (reference) "../../../common/styles/variables.less";
+
+.wrapper {
+  height: 100%;
+   &.flex {
+  	display: flex;
+  	flex-flow: row wrap;
+  }
+  .aside {
+  	 width: 300px;
+  	 .urls_list{
+  	 	   display: block;
+  	 }
+  }
+
+  .content {
+  	 flex: 3 0px;
+  }
+}
+

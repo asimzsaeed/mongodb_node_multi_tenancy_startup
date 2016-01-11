@@ -15,6 +15,7 @@ function pageRoutes($stateProvider) {
         url: '^/about', // The ^ character makes this url override the parent url
         template: '<div about-view></div>',
         data: {
+            isPublic :true,
             moduleClasses: 'page',
             pageClasses: 'about',
             pageTitle: 'About',
@@ -22,9 +23,52 @@ function pageRoutes($stateProvider) {
         }
     };
 
+    var create = {
+        name: 'pages.create',
+        url: '^/create', // The ^ character makes this url override the parent url
+        template: '<div create-view></div>',
+        data: {
+            isPublic :true,
+            moduleClasses: 'page',
+            pageClasses: 'create',
+            pageTitle: 'Signup',
+            pageDescription: 'Some description.'
+        }
+    };
+
+
+     var loginDefault = {
+        name: 'pages.loginDefault',
+        url: '^/login_default', //  
+        template: '<div login-default-view></div>',
+        data: {
+            isPublic :true,
+            moduleClasses: 'page',
+            pageClasses: 'login',
+            pageTitle: 'Login',
+            pageDescription: 'Some description.'
+        }
+    };
+
+    var login = {
+        name: 'pages.login',
+        url: '^/login', //  
+        template: '<div login-view></div>',
+        data: {
+            isPublic :true,
+            moduleClasses: 'page',
+            pageClasses: 'login',
+            pageTitle: 'Login',
+            pageDescription: 'Some description.'
+        }
+    };
+
+
     $stateProvider.state(pages);
     $stateProvider.state(about);
-
+    $stateProvider.state(create);
+    $stateProvider.state(loginDefault);
+    $stateProvider.state(login);
 }
 
 pageRoutes.$inject = ['$stateProvider'];

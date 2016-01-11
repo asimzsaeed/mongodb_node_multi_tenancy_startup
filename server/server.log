@@ -1,0 +1,14 @@
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":3336,"level":30,"msg":"initialize logger:: Vizob CRM","time":"2015-12-31T11:10:06.338Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":3336,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:10:06.340Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":8784,"level":30,"msg":"initialize logger:: Vizob CRM","time":"2015-12-31T11:11:40.815Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":8784,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:11:40.816Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":8784,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:17:31.671Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":8784,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:17:36.966Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":8784,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:13:37.891Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":12216,"level":30,"msg":"initialize logger:: Vizob CRM","time":"2015-12-31T11:14:49.896Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":12216,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:14:49.897Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":12216,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:30:05.726Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":10500,"level":30,"msg":"initialize logger:: Vizob CRM","time":"2015-12-31T11:33:04.984Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":10500,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:33:04.986Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":11752,"level":30,"msg":"initialize logger:: Vizob CRM","time":"2015-12-31T11:35:32.428Z","v":0}
+{"name":"Vizob CRM","hostname":"testuser-PC","pid":11752,"level":50,"msg":"AuthService>>checkURL>>","time":"2015-12-31T11:35:32.430Z","v":0}

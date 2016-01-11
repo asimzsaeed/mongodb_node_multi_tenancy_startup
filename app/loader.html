@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html ng-app="vizob.crm">
     <head>
@@ -7,7 +6,7 @@
         <meta name="viewport" content="width=device-width, maximum-scale = 1.0">
         <meta name="fragment" content="!" />
 
-        <title ng-bind="'Vizob - CRM - ' + pageTitle"></title>
+        <title ng-bind="'Vizob - ' + pageTitle"></title>
         <meta name="description" content="{{pageDescription}}">
 
         <link href="/vendor.css" rel="stylesheet">
@@ -15,14 +14,7 @@
     </head>
  
     <body class="flex" ng-class="bodyClasses" ng-controller="MainCtrl">
-    <vizob-sidebar ng-if="showMenu"></vizob-sidebar>
-    <div class="content-wrapper flex">
-
-        <vizob-navbar ng-if="showMenu"></vizob-navbar>
-        <div class="content" ng-class="{'no-padding':!showMenu}">
-           <div ui-view autoscroll="false" id="ui-view"></div>
-        </div>
-    </div>
+    <div ui-view autoscroll="false" id="ui-view"></div>
     <script src="/vendor.js"></script>
     <script src="/bundle.js"></script>
     </body>

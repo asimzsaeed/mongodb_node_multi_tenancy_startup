@@ -1,9 +1,9 @@
 'use strict';
-function appConfig($urlRouterProvider, $locationProvider) {
-
+function appConfig($httpProvider, $urlRouterProvider, $locationProvider) {
+	$httpProvider.interceptors.push('AuthInterceptor');
     $locationProvider.html5Mode(true).hashPrefix('!');
     $urlRouterProvider.otherwise('/');
 }
 
-appConfig.$inject = ['$urlRouterProvider', '$locationProvider'];
+appConfig.$inject = ['$httpProvider', '$urlRouterProvider', '$locationProvider'];
 module.exports = appConfig;

@@ -1,0 +1,32 @@
+@import (reference) "../../../common/styles/mixins.less";
+@import (reference) "../../../common/styles/variables.less";
+
+.wrapper {
+  height: 100%;
+   &.flex {
+  	display: flex;
+  	flex-flow: row wrap;
+  }
+  .aside {
+  	 width: 300px;
+
+  	 .urls_list{
+  	 	display: block;
+  	 }
+
+  	 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+		background-color: transparent;
+		opacity: 1;
+		cursor: default;
+		border: 0px solid @white;
+    	border-radius: 0px;
+    	border-bottom:  1.5px solid #444;
+    	box-shadow: none;
+	}
+  }
+
+  .content {
+  	 flex: 3 0px;
+  }
+}
+

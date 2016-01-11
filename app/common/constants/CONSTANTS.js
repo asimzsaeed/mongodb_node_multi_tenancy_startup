@@ -2,7 +2,8 @@
 
 var CONSTANTS = (function() {
     return {
-		API_BASE : 'http://localhost:3000/api/',
+		API_BASE : '/api/',
+		REST_BASE : '/',
 		successMessage: 'You have successfully logged in.',
 		failureMessage: 'Your username or password is incorrect.',
 		key: 'value'

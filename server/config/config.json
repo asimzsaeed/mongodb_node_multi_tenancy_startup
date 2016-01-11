@@ -3,18 +3,18 @@
     "NODE_ENV": "development"
   },
   "domain": {
-      "vizob":"[PLEASE UPDATE YOUR DOMAIN NAME HERE]",
-      "SYSTEM_DOMAINS" : ["www", "http", "https", "tcp", "admin", "app", "apps"],
+      "vizob":"http://www.vizob.com",
+      "SYSTEM_DOMAINS" : ["vizob", "www", "http", "https", "tcp", "admin", "app", "apps"],
       "BLACK_LIST_DOMAINS" : []
     },
 
   "urls": {
-    "clientLogin": "[PLEASE UPDATE YOUR URL NAME HERE, e.g www.mydoman.com\\login]"
+    "clientLogin": "http://www.vizob.com"
   },
   "dbs": {
     "client_base": "mongodb://localhost/",
     "client_db_sufix": "_vizob_com",
-    "vizob_com_crm": "mongodb://localhost/com_v1"
+    "vizob_com_crm": "mongodb://localhost/vizob_com_crm"
   },
   "auth": {
     "tokenExpiresIn": "7d",

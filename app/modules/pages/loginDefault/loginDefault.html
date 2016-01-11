@@ -1,0 +1,20 @@
+<div class="wrapper flex">
+ <div class="aside"> 
+ 	 <ng:form name="createForm">
+ 	 	 <div class="form-group form-group-default">
+			<h3>Login to your CRM</h3>
+			<div class="form-group">
+			    <label>Enter your company's Vizob domain.</label>
+			    <div class="input-group">  
+			    	<input type="tetx" ng-model="vm.domain" placeholder="companydomain" class="form-control" required /> 
+					<div class="input-group-addon">.vizob.com</div> 
+				</div>
+			<p ng-if="vm.message" ng-bind="vm.message"></p>
+      	</div>
+      	<button class="btn btn-default" ng-click="vm.DomainVerify(vm.domain)">Continue</button>
+ 	 </ng:form>
+ </div>
+ <div class="content"> 
+ 	Picture
+ </div>
+</div>
