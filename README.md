@@ -22,6 +22,9 @@ It's super easy, to setup multi-tenancy application.
 npm & bower install
 ```
 
+**Configure your domain in host file and point to **
+`127.0.0.1:80`
+
 **Update domain name, database prefix in config.json**
 
 ![image](https://cloud.githubusercontent.com/assets/12631282/12248959/b3afa624-b8b4-11e5-8f53-7d22c710eff3.png)
@@ -47,8 +50,3 @@ npm & bower install
 ![image](https://cloud.githubusercontent.com/assets/12631282/12248810/bf0e5ce6-b8b3-11e5-94e4-379adfee29ef.png)
 ![image](https://cloud.githubusercontent.com/assets/12631282/12248825/d706d03a-b8b3-11e5-97d7-8498dc1e7732.png)
 ![image](https://cloud.githubusercontent.com/assets/12631282/12248837/e932f310-b8b3-11e5-85a5-e4c9ad832154.png)
-
-
-# MongoDB, NodeJS Multi-tenancy startup template
-
-
