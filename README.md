@@ -1,6 +1,23 @@
-# MongoDB, NodeJS Multi-tenancy startup template
+# MongoDB, NodeJS, Multi-tenancy Startup Template
 
-Steps to follow
+It's super easy, to setup multi-tenancy application.
+
+
+>Separate Client and Server apps, REST API, Token based Authorization !
+
+
+**It's all included!**
+- Subdomain for each client
+- Separate MongoDB per Client
+- Centralized Identity Management Database
+- Token base Authentication
+- Separate Client and Server Apps
+- Components and Module based Architecture
+- REST API
+- A lot more... & comming
+----
+
+**Steps to follow**
 ```javascrip 
 npm & bower install
 ```
