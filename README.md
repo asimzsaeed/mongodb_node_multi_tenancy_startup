@@ -22,7 +22,9 @@ It's super easy, to setup multi-tenancy application.
 - Invitations> Invite/add users to your app
 - User Profile & Account Settings
 - Documentation
-- ..
+- .
+
+
 ----
 
 **Steps to follow**
