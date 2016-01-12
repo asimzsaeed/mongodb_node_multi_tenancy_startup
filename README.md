@@ -16,6 +16,13 @@ It's super easy, to setup multi-tenancy application.
 - REST API
 - A lot more... & comming
 
+**Feature Planned**
+- OAuth Implementation
+- Client, Server apps tests with Sonar Reporting
+- Invitations> Invite/add users to your app
+- User Profile & Account Settings
+- Documentation
+- ..
 ----
 
 **Steps to follow**
